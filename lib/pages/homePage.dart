@@ -6,12 +6,14 @@ class HomePage extends StatelessWidget {
   String name = "Vaibhav";
   int num = 1;
   @override
+
+  // return type of build is Widget
   Widget build(BuildContext context) {
     //Scaffold is a widget that provides a basic visual layout structure for the app
     return Scaffold(
       //appBar is a widget -- header of the app
       appBar: AppBar(
-        title: Text("My Flutter App"),
+        title: Text("Flutter Learning"),
       ),
       body: Center(
         child: Container(

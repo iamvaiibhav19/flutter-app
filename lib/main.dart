@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:learning/homePage.dart';
+import 'package:learning/pages/homePage.dart';
 
 // entry point of the app
 void main() {
@@ -15,6 +15,16 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: HomePage(),
+
+      themeMode: ThemeMode.light, //to switch theme
+      //to set light theme
+      theme: ThemeData(
+        primarySwatch: Colors.deepPurple,
+      ),
+      //to set dark theme
+      darkTheme: ThemeData(
+        brightness: Brightness.dark,
+      ),
     );
   }
 }
