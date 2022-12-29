@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:learning/pages/homePage.dart';
+import 'package:learning/pages/login_page.dart';
 
 // entry point of the app
 void main() {
@@ -14,7 +15,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: HomePage(),
+      // home: HomePage(),
 
       themeMode: ThemeMode.light, //to switch theme
       //to set light theme
@@ -25,6 +26,13 @@ class MyApp extends StatelessWidget {
       darkTheme: ThemeData(
         brightness: Brightness.dark,
       ),
+
+      //routes
+      initialRoute: "/home",
+      routes: {
+        "/": (context) => LoginPage(),
+        "/home": (context) => HomePage(),
+      },
     );
   }
 }
