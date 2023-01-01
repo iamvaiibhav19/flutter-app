@@ -13,7 +13,7 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       //appBar is a widget -- header of the app
       appBar: AppBar(
-        title: Text("Catalog App"),
+        title: const Text("My First Flutter App"),
       ),
       body: Center(
         child: Container(
