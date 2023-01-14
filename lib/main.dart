@@ -19,11 +19,13 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       // home: HomePage(),
 
-      themeMode: ThemeMode.dark, //to switch theme
+      themeMode: ThemeMode.light, //to switch theme
       //to set light theme
       theme: ThemeData(
         primarySwatch: Colors.deepPurple,
         fontFamily: GoogleFonts.lato().fontFamily,
+        // add white color to background
+        scaffoldBackgroundColor: Colors.white,
         // primaryTextTheme: GoogleFonts.latoTextTheme(),
       ),
       //to set dark theme
